@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container my-3">
+        <h3>· 물품정보</h3>
+        <div class="card" style="width: 40rem;">
+            <div class="card-body">
+                <p class="border-bottom py-2">·반출일 : {{ takeout.carry_day }}</p>
+                <p class="border-bottom py-2">·부서명 : {{ takeout.carry_team }}</p>
+                <p class="border-bottom py-2">·담당자 : {{ takeout.author }}</p>
+                <p class="border-bottom py-2">·회사명 : {{ takeout.receive_company }}</p>
+                <p class="border-bottom py-2">·회사번호 : {{ takeout.receive_tel }}</p>
+                <p class="border-bottom py-2">·회사담당자 : {{ takeout.receive_user }}</p>
+                <p class="border-bottom py-2">·제품명 : {{ takeout.material_name }}</p>
+                <p class="border-bottom py-2">·제품정보 : {{ takeout.material_info }}</p>
+                <p class="border-bottom py-2">·반출목적 : {{ takeout.purpose }}</p>
+                <p class="border-bottom py-2">·제조일 : {{ takeout.pack_date }}</p>
+                <p class="border-bottom py-2">·제조용량 : {{ takeout.production_capacity }}</p>
+                <p class="border-bottom py-2">·반출용량 : {{ takeout.carry_capacity }}</p>
+                <p class="border-bottom py-2">·잔량 : {{ takeout.residual_quantity }}</p>
+                <p class="border-bottom py-2">·배송 : {{ takeout.delivery }}</p>
+                <p class="border-bottom py-2">·비고 : {{ takeout.note }}</p>
+            </div>
+        </div>
+        {% if request.user == takeout.author %}
+            <div class="my-3">
+                <a href="{% url 'control:takeout_modify' takeout.id %}"
+                   class="btn btn-primary">수정하기</a>
+                <a href="#" class="delete btn btn-danger"
+                   data-uri="{% url 'control:takeout_delete' takeout.id %}">삭제하기</a>
+            </div>
+        {% endif %}
+    </div>
+
+
+
+{% endblock %}
+{% block script %}
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            $(".delete").on('click', function () {
+                if (confirm("정말로 삭제하시겠습니까?")) {
+                    location.href = $(this).data('uri');
+                }
+            });
+        });
+    </script>
+{% endblock %}

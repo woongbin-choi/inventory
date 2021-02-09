@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h5 class="my-3 border-bottom pb-2">제품등록</h5>
+    <form method="post" class="post-form my-3">
+        {% csrf_token %}
+         {% if form.errors %}
+            <div class="alert alert-danger" role="alert">
+            {% for field in form %}
+                {% if field.errors %}
+                <strong>{{ field.label }}</strong>
+                {{ field.errors }}
+                {% endif %}
+            {% endfor %}
+            </div>
+        {% endif %}
+        <!-- 오류표시 End -->
+        <div class="form-group">
+            <label for="product_name">제품명</label>
+            <input type="text" class="form-control" name="product_name" id="product_name"
+                   value="{{ form.product_name.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="purity">순도</label>
+            <input type="text" class="form-control" name="purity" id="purity"
+                   value="{{ form.purity.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="quantity">용량</label>
+            <input type="text" class="form-control" name="quantity" id="quantity"
+                   value="{{ form.quantity.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="residual_quantity">잔량</label>
+            <input type="text" class="form-control" name="residual_quantity" id="residual_quantity"
+                   value="{{ form.residual_quantity.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="manufacturer">제조사</label>
+            <input type="text" class="form-control" name="manufacturer" id="manufacturer"
+                   value="{{ form.manufacturer.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="storage_location">저장위치</label>
+            <input type="text" class="form-control" name="storage_location" id="storage_location"
+                   value="{{ form.storage_location.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="category">카테고리</label>
+            <input type="text" class="form-control" name="category" id="category"
+                   value="{{ form.category.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="partname">부서명</label>
+            <input type="text" class="form-control" name="partname" id="partname"
+                   value="{{ form.partname.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="division">분할</label>
+            <input type="text" class="form-control" name="division" id="division"
+                   value="{{ form.division.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="author">글쓴이</label>
+            <input type="text" class="form-control" name="author" id="author"
+                   value="{{ form.author.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="registration_date">등록일</label>
+            <input type="text" class="form-control" name="registration_date" id="registration_date"
+                   value="{{ form.registration_date.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="xpiration_date">만료일</label>
+            <input type="text" class="form-control" name="xpiration_date" id="xpiration_date"
+                   value="{{ form.xpiration_date.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="comment">코멘트</label>
+            <input type="text" class="form-control" name="comment" id="comment"
+                   value="{{ form.comment.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="msds">msds</label>
+            <input type="text" class="form-control" name="msds" id="msds"
+                   value="{{ form.msds.value|default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="modify_date">수정일</label>
+            <input type="text" class="form-control" name="modify_date" id="modify_date"
+                   value="{{ form.modify_date.value|default_if_none:'' }}">
+        </div>
+
+        <button type="submit" class="btn btn-primary">저장하기</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-3">
+    <h3>· 물품정보</h3>
+    <div class="card" style="width: 40rem;">
+        <div class="card-body">
+            <p class="border-bottom py-2">·제품명 : {{ management.product_name }}</p>
+            <p class="border-bottom py-2">·순도 : {{ management.purity }}</p>
+            <p class="border-bottom py-2">·용량/잔량 : {{ management.quantity }} / {{ management.residual_quantity }}</p>
+            <p class="border-bottom py-2">·제조사 : {{ management.manufacturer }}</p>
+            <p class="border-bottom py-2">·보관위치 : {{ management.storage_location }}</p>
+            <p class="border-bottom py-2">·카테고리: {{ management.category }}</p>
+            <p class="border-bottom py-2">·MSDS: {{ management.msds }}</p>
+            <p class="border-bottom py-2">·유입방법: {{ management.division }}</p>
+            <p class="border-bottom py-2">·부서명 : {{ management.partname }}</p>
+        </div>
+    </div>
+</div>
+
+<div class="container my-3">
+    <div class="card" style="width: 40rem;">
+        <div class="card-body">
+            <p class="border-bottom py-2">·등록일 : {{ management.registration_date }}</p>
+            <p class="border-bottom py-2">·만료일 : {{ management.xpiration_date }}</p>
+        </div>
+        <div class="card-body">
+            <p class="border-bottom py-2">·코멘트 : {{ management.comment }}</p>
+        </div>
+    </div>
+    <div>
+        {% if request.user == management.author %}
+        <div class="my-3">
+            <a href="{% url 'inventory:management_modify' management.id  %}"
+               class="btn btn-primary">수정하기</a>
+            <a href="#" class="delete btn btn-danger"
+               data-uri="{% url 'inventory:management_delete' management.id  %}">삭제하기</a>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+{% block script %}
+<script type='text/javascript'>
+    $(document).ready(function () {
+        $(".delete").on('click', function () {
+            if (confirm("정말로 삭제하시겠습니까?")) {
+                location.href = $(this).data('uri');
+            }
+        });
+    });
+</script>
+{% endblock %}
