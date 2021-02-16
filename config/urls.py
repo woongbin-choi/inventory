@@ -19,7 +19,7 @@ from django.urls import path, include
 from inventory.views import base_views
 from consumables.views import basic_views
 from control.views import controlbase_views
-from . import home
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
