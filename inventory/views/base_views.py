@@ -36,3 +36,6 @@ def detail(request, management_id):
     context = {'management': management}
 
     return render(request, 'inventory/management_detail.html', context)
+
+def home(request):
+    return render(request, 'home.html')

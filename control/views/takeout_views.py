@@ -5,6 +5,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from ..forms import TakeoutForm
 from ..models import Takeout
 
+@login_required(login_url='common:login')
 def takeout_create(request):
     """
     반출 물질 등록

@@ -19,6 +19,7 @@ from django.urls import path, include
 from inventory.views import base_views
 from consumables.views import basic_views
 from control.views import controlbase_views
+from . import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,7 +28,8 @@ urlpatterns = [
     path('consumables/', include('consumables.urls')),
     path('control/', include('control.urls')),
 
-    path('', base_views.index, name='index'),  # '/' 에 해당되는 path
+
+    path('', base_views.home, name='home'),  # '/' 에 해당되는 path
     path('inventory/', base_views.index, name='index'),
     path('control/', controlbase_views.indexB, name='indexB'),
     path('consumables/', basic_views.indexA, name='indexA'),
