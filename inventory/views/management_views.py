@@ -15,6 +15,7 @@ def management_create(request):
         form = ManagementForm(request.POST)
         if form.is_valid():
             management = form.save(commit=False)
+            management.author = request.user
             management.save()
             return redirect('inventory:index')
     else:

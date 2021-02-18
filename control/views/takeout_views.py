@@ -13,9 +13,10 @@ def takeout_create(request):
     if request.method == 'POST':
         form = TakeoutForm(request.POST)
         if form.is_valid():
-            question = form.save(commit=False)
-            question.save()
-            return redirect('control:index')
+            takeout = form.save(commit=False)
+            takeout.author = request.user
+            takeout.save()
+            return redirect('control:indexB')
     else:
         form = TakeoutForm()
     context = {'form': form}
@@ -54,4 +55,4 @@ def takeout_delete(request, takeout_id):
         return redirect('control:detail', takeout_id=takeout.id)
     takeout.delete()
 
-    return redirect('control:index')
+    return redirect('control:indexB')

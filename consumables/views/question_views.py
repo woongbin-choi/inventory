@@ -15,8 +15,9 @@ def question_create(request):
         form = QuestionForm(request.POST)
         if form.is_valid():
             question = form.save(commit=False)
+            question.author = request.user
             question.save()
-            return redirect('consumables:index')
+            return redirect('consumables:indexA')
     else:
         form = QuestionForm()
     context = {'form': form}
@@ -55,4 +56,4 @@ def question_delete(request, question_id):
         messages.error(request, '삭제권한이 없습니다')
         return redirect('consumables:detail', question_id=question.id)
     question.delete()
-    return redirect('consumables:index')
+    return redirect('consumables:indexA')

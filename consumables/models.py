@@ -10,8 +10,8 @@ class Question(models.Model):
     quantity = models.IntegerField()
     category = models.CharField(max_length=32)
     safety_stock = models.IntegerField()
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
-    note = models.TextField()
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    note = models.TextField(null=True, blank=True)
     modify_date = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):

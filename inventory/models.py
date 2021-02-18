@@ -11,10 +11,10 @@ class Management(models.Model):
     category = models.CharField(max_length=32)
     partname = models.CharField(max_length=32)
     division = models.CharField(max_length=32)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     registration_date = models.DateField()
     xpiration_date = models.DateField()
-    comment = models.CharField(max_length=128)
+    comment = models.CharField(max_length=128, null=True, blank=True)
     msds = models.FileField(blank=True, null=True)
     modify_date = models.DateTimeField(null=True, blank=True)
 
