@@ -10,7 +10,12 @@
 ![Alt text](/path/to/img.jpg) erd사진 이미지파일에 넣고 불러오기 (사이즈 조절은 html문법으로 가능하다)   
 <img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
 ***   
-### Diagram    
+### Diagram
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
 
 ```    
 *** 
@@ -26,7 +31,7 @@ public class BootSpringBootApplication {
 }
 ```
 ***
-## 📌 _Core <span style="color:red">Trouble shooting</span>_   
+## 📌 _Core Trouble shooting_   
 ```java
 public class BootSpringBootApplication {
   public static void main(String[] args) {
