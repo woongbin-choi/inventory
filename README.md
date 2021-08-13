@@ -46,7 +46,7 @@ public class BootSpringBootApplication {
 ```
 ## _📝  Trouble   
 <details>
-<summary>`김의성 이슈 코드 작성`</summary>
+<summary>김의성 이슈 코드 작성</summary>
 <div markdown="1">
 
 이슈 해결과정 작성 
@@ -104,7 +104,7 @@ public class BootSpringBootApplication {
 
 ## 🔆 _Bragging Code_    
 
-> 영화관 좌석표
+> `영화관 좌석표`
 > > 간단설명   
 ```java
 public class BootSpringBootApplication {
