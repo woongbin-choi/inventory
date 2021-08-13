@@ -41,12 +41,15 @@ public class BootSpringBootApplication {
 }
 ```
 ## _📝 trouble   
-<detials>
-<summary> 김의성 트러블 </summary>
+<details>
+<summary>상세 내용 확인</summary>
+<div markdown="1">
 
- 
- 사진 및 내용 
- 
+div 에 markdown attribute 를 1 로 
+하는 이유는 div 안에서
+markdown 을 사용하기 위해서 입니다.
+
+
 </div>
 </details>
 
