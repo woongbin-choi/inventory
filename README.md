@@ -113,7 +113,7 @@ public class BootSpringBootApplication {
   }
 }
 ```   
-> 동영상 삽입
+> `동영상 삽입`
 > > 간단설명   
 ```java
 public class BootSpringBootApplication {
