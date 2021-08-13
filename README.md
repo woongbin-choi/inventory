@@ -4,7 +4,7 @@
 ### Personnel : 6 명.  
 ***
   >📌 **Used Technology**     
-  > >_JAVA 11 / Swing / Oracle_
+  ## > >_JAVA 11 / Swing / Oracle_
 ***
 
 
