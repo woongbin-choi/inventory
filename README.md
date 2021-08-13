@@ -17,7 +17,7 @@ Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
 ```
 
-```    
+   
 *** 
 ## 📌 _Core Functions_
 > __CRUD__
