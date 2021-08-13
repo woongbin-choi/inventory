@@ -11,8 +11,8 @@
 <img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
 ***
 ## Core Functions
-> 1. 핵심기능
+> __핵심기능__
 > > 핵심기능 설명
-> > > 핵심기능 
+> > > 핵심기능 코드 넣기 
 
 
