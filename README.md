@@ -40,14 +40,12 @@ public class BootSpringBootApplication {
   }
 }
 ```
-## _📝 trouble   
+## _📝  Trouble   
 <details>
-<summary>상세 내용 확인</summary>
+<summary>김의성 이슈 코드</summary>
 <div markdown="1">
 
-div 에 markdown attribute 를 1 로 
-하는 이유는 div 안에서
-markdown 을 사용하기 위해서 입니다.
+이슈 해결과정 작성 
 
 
 </div>
