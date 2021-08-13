@@ -22,7 +22,7 @@ public class BootSpringBootApplication {
 }
 ```
 ***
-## 📌 _Trouble shooting_   
+## 📌 _Core Trouble shooting_   
 ```java
 public class BootSpringBootApplication {
   public static void main(String[] args) {
@@ -42,7 +42,7 @@ public class BootSpringBootApplication {
 ```
 ## _📝  Trouble   
 <details>
-<summary>김의성 이슈 코드</summary>
+<summary>김의성 이슈 코드 작성</summary>
 <div markdown="1">
 
 이슈 해결과정 작성 
@@ -51,7 +51,7 @@ public class BootSpringBootApplication {
 </div>
 </details>   
 <details>
-<summary>윤수영 이슈 코드</summary>
+<summary>윤수영 이슈 코드 작성</summary>
 <div markdown="1">
 
 이슈 해결과정 작성 
@@ -60,7 +60,7 @@ public class BootSpringBootApplication {
 </div>
 </details>    
 <details>
-<summary>최웅빈 이슈 코드</summary>
+<summary>최웅빈 이슈 코드 작성</summary>
 <div markdown="1">
 
 이슈 해결과정 작성 
@@ -69,7 +69,7 @@ public class BootSpringBootApplication {
 </div>
 </details>    
 <details>
-<summary>신은철 이슈 코드</summary>
+<summary>신은철 이슈 코드 작성</summary>
 <div markdown="1">
 
 이슈 해결과정 작성 
@@ -78,7 +78,7 @@ public class BootSpringBootApplication {
 </div>
 </details>    
 <details>
-<summary>이한나 이슈 코드</summary>
+<summary>이한나 이슈 코드 작성</summary>
 <div markdown="1">
 
 이슈 해결과정 작성 
@@ -87,7 +87,7 @@ public class BootSpringBootApplication {
 </div>
 </details>   
 <details>
-<summary>나지수 이슈 코드</summary>
+<summary>나지수 이슈 코드 작성</summary>
 <div markdown="1">
 
 이슈 해결과정 작성 
