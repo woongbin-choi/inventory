@@ -3,8 +3,8 @@
 ### Period : August 2021, 2weeks
 ### Personnel : 6 명.  
 ***
-## 📌 **Used Technology**     
-## _JAVA 11 / Swing / Oracle_
+## 📌 _Used Technology_       
+## **JAVA 11 / Swing / Oracle**
 ***
 ### ERD
 ![Alt text](/path/to/img.jpg) erd사진 이미지파일에 넣고 불러오기 (사이즈 조절은 html문법으로 가능하다)   
@@ -12,7 +12,7 @@
 ***
 ## 📌 _Core Functions_
 > __CRUD__
-> > CRUD기능 설명
+> > **CRUD기능 설명**
 > > > 코드 넣기    
 ```java
 public class BootSpringBootApplication {
