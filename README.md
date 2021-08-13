@@ -121,10 +121,4 @@ public class BootSpringBootApplication {
 ***   
 ## _회고록_
 ~~~~~~~~~~작성~~~~~~~~~~~
-```mermaid
-graph LR
-A[Hard edge] -->B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
-```
+
