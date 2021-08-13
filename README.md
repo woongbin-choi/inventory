@@ -13,13 +13,31 @@
 ## 📌 _Core Functions_
 > __CRUD__
 > > **CRUD기능 설명**
-> > > 코드 넣기    
+ 
 ```java
 public class BootSpringBootApplication {
   public static void main(String[] args) {
-    System.out.println("Hello, Honeymon");
+    System.out.println("핵심 기능 코드");
   }
 }
 ```
+***
+## 📌 _Trouble shooting_   
+```java
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("핵심 트러블 오류 해결 전 코드");
+  }
+}
+```
+> __해결 방법__
+> > 해결방법 설명
 
+```java
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("핵심 트러블 오류 해결 후 코드");
+  }
+}
+```
 
