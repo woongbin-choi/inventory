@@ -120,7 +120,7 @@ public class BootSpringBootApplication {
 ```   
 ***   
 
-## _ScreenShot_   
+## 📸 _ScreenShot_   
 <details>
 <summary>GUI 화면 다 넣기</summary>
 <div markdown="1">
@@ -130,7 +130,7 @@ public class BootSpringBootApplication {
 
 </div>
 </details>   
-<details>
+
 
 ## _회고록_
 ~~~~~~~~~~작성~~~~~~~~~~~
