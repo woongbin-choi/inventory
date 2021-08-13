@@ -26,7 +26,7 @@ public class BootSpringBootApplication {
 }
 ```
 ***
-## 📌 _Core Trouble shooting_   
+## 📌 _Core <span style="color:red">Trouble shooting</span>_   
 ```java
 public class BootSpringBootApplication {
   public static void main(String[] args) {
