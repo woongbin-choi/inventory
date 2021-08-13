@@ -11,7 +11,26 @@
 <img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
 ***   
 ### Diagram 
+```uml
+:Main Admin: as Admin
+(Use the application) as (Use)
 
+User -> (Start)
+User --> (Use)
+
+Admin ---> (Use)
+
+note right of Admin : This is an example.
+
+note right of (Use)
+  A note can also
+  be on several lines
+end note
+
+note "This note is connected\nto several objects." as N2
+(Start) .. N2
+N2 .. (Use)
+```
 *** 
 ## 📌 _Core Functions_
 > __CRUD__
