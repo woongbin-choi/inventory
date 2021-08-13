@@ -11,21 +11,6 @@
 <img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
 ***   
 ### Diagram    
-```flow
-st=>start: Start:>http://www.google.com[blank]
-e=>end:>http://www.google.com
-op1=>operation: My Operation
-sub1=>subroutine: My Subroutine
-cond=>condition: Yes
-or No?:>http://www.google.com
-io=>inputoutput: catch something...
-para=>parallel: parallel tasks
-
-st->op1->cond
-cond(yes)->io->e
-cond(no)->para
-para(path1, bottom)->sub1(right)->op1
-para(path2, top)->op1
 
 ```    
 *** 
@@ -61,7 +46,7 @@ public class BootSpringBootApplication {
 ```
 ## _📝  Trouble   
 <details>
-<summary>김의성 이슈 코드 작성</summary>
+<summary>`김의성 이슈 코드 작성`</summary>
 <div markdown="1">
 
 이슈 해결과정 작성 
