@@ -119,15 +119,19 @@ public class BootSpringBootApplication {
 }
 ```   
 ***   
+
+## _ScreenShot_   
+<details>
+<summary>GUI 화면 다 넣기</summary>
+<div markdown="1">
+
+핵심 이미지 불러오기  
+
+
+</div>
+</details>   
+<details>
+
 ## _회고록_
 ~~~~~~~~~~작성~~~~~~~~~~~
-   
-   
- 
- ```mermaid
-graph LR
-A[Hard edge] -->B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
-​```
+
