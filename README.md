@@ -43,7 +43,7 @@ public class BootSpringBootApplication {
 ## _📝 trouble   
 <detials>
 <summary> 김의성 트러블 </summary>
-<div markdown="1">
+
  
  사진 및 내용 
  
