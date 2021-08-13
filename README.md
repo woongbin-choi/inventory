@@ -31,7 +31,7 @@ end note
 note "This note is connected\nto several objects." as N2
 (Start) .. N2
 N2 .. (Use)
-```.   
+```  
 *** 
 ## 📌 _Core Functions_
 > __CRUD__
