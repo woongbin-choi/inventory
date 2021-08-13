@@ -1,6 +1,6 @@
 # 🎥 Movie Kiosk (Team Project)    
 ***
-### Period : August 2021|  2weeks
+### Period : August 2021,  2weeks
 ### Personnel : 6 명.  
 ***
 ## 📌 _Used Technology_       
@@ -11,7 +11,8 @@
 <img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
 ***   
 ### Diagram  
-순서도 넣고 싶은데 방법을 도저히 모르겠다   
+   
+   
 
    
 *** 
@@ -45,7 +46,7 @@ public class BootSpringBootApplication {
   }
 }
 ```
-## _📝  Trouble   
+## 📝  _Trouble_   
 <details>
 <summary>김의성 이슈 코드 작성</summary>
 <div markdown="1">
