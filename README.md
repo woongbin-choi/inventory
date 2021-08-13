@@ -1,6 +1,6 @@
 # 🎥 Movie Kiosk (Team Project)    
 ***
-### Period : August 2021, 2weeks
+### Period : August 2021|  2weeks
 ### Personnel : 6 명.  
 ***
 ## 📌 _Used Technology_       
@@ -40,4 +40,13 @@ public class BootSpringBootApplication {
   }
 }
 ```
+## _📝 trouble   
+<detials>
+<summary> 김의성 트러블 </summary>
+<div markdown="1">
+ 
+ 사진 및 내용 
+ 
+</div>
+</details>
 
