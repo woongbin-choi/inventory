@@ -4,6 +4,6 @@
 #### 참여 인원 : 6 명.  
 ***
  > 사용한 기술   
- _JAVA 11 / Swing / Oracle_
+ > >_JAVA 11 / Swing / Oracle_
 
 
