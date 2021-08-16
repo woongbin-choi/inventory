@@ -66,7 +66,7 @@ public class BootSpringBootApplication {
 
 </div>
 </details>    
-   
+   <div> ㅈㄹㅈㄹ </div>
 
 <details>
 	<summary>ScrollPane Issue</summary>
@@ -155,8 +155,7 @@ public class BootSpringBootApplication {
 			scroll.setVisible(true);
 		}
 								     
-</div>	
-		<div> </div>
+</div>			
 </details>
 장바구니 품목들은 각각 JPanel로 이루어져 있다.<br>   
 그 패널 안에는 해당 품목의 이미지/이름/가격/수량이 들어가는데,<br>    
