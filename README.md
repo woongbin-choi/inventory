@@ -100,8 +100,8 @@ public class BootSpringBootApplication {
 			scroll.setBounds(0, 67, 600, 383);
 			scroll.setVisible(true);
 		}	
-								     </div>
-	</details>
+	</div>							     
+</details>
 <details>
 <summary>신은철 이슈 코드 작성</summary>
 <div markdown="1">
