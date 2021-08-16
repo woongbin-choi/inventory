@@ -65,11 +65,11 @@ public class BootSpringBootApplication {
 
 </div>
 </details>    
+   
 <details>
-<summary>최웅빈 이슈 코드 작성</summary>
-<div markdown="1">    
-	
-if(pbDAO.basketList().size() == 0) {
+	<summary>ScrollPane Issue</summary>
+	<div markdown="1">
+		if(pbDAO.basketList().size() == 0) {
 			JPanel noData = new JPanel();
 			noData.setBackground(new Color(255,254,230));
 			JLabel msg = new JLabel("장바구니에 상품이 없습니다");
@@ -100,11 +100,7 @@ if(pbDAO.basketList().size() == 0) {
 			scroll.setBounds(0, 67, 600, 383);
 			scroll.setVisible(true);
 		}	
-   
-
-
-</div>
-</details>    
+	</details>
 <details>
 <summary>신은철 이슈 코드 작성</summary>
 <div markdown="1">
