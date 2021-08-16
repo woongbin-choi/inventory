@@ -71,7 +71,14 @@ public class BootSpringBootApplication {
 <details>
 	<summary>ScrollPane Issue</summary>
 	<div markdown="1"> 
-	 <div> ㅈㄹㅈㄹ </div>
+	 <div> 장바구니 품목들은 각각 JPanel로 이루어져 있다.<br>   
+그 패널 안에는 해당 품목의 이미지/이름/가격/수량이 들어가는데,<br>    
+이 때 Panel의 Layout을 null로 지정해주어야 setBounds 함수로 원하는 위치에 삽입할 수 있다.<br>      
+하지만 JScrollPane Component의 Layout을 Null로 지정하면 전체 장바구니의 스크롤기능이 들어가지를 않는다.<br>      
+이 부분을 해결하기 위해서는, 각각의 품목 Panel의 요소들을 setBounds로 원하는 위치에 넣은 후에<br>      
+그 JPanel을 다시 JPanel2에 넣어주고,JPanel2의 Layout을 Default값 BorderLayout으로 지정한다.<br>      
+여기서 주위할점은 Scroll 기능은 양 사이드의 끝을 컴퓨터가 인지해야 들어가기 때문에<br>      
+JScrollPane의 Component로 들어가는 JPanel안에 요소(JButton,JLabel)중 하나라도 "East","West"에 지정이 되있어야 한다<br>    </div>
 	
 	public Detail_P2_C(String img_path, String name, String price, String quantity, JFrame frame) {
 	      LineBorder lineColor = new LineBorder(new Color(87,149,255));
@@ -157,14 +164,7 @@ public class BootSpringBootApplication {
 								     
 </div>			
 </details>
-장바구니 품목들은 각각 JPanel로 이루어져 있다.<br>   
-그 패널 안에는 해당 품목의 이미지/이름/가격/수량이 들어가는데,<br>    
-이 때 Panel의 Layout을 null로 지정해주어야 setBounds 함수로 원하는 위치에 삽입할 수 있다.<br>      
-하지만 JScrollPane Component의 Layout을 Null로 지정하면 전체 장바구니의 스크롤기능이 들어가지를 않는다.<br>      
-이 부분을 해결하기 위해서는, 각각의 품목 Panel의 요소들을 setBounds로 원하는 위치에 넣은 후에<br>      
-그 JPanel을 다시 JPanel2에 넣어주고,JPanel2의 Layout을 Default값 BorderLayout으로 지정한다.<br>      
-여기서 주위할점은 Scroll 기능은 양 사이드의 끝을 컴퓨터가 인지해야 들어가기 때문에<br>      
-JScrollPane의 Component로 들어가는 JPanel안에 요소(JButton,JLabel)중 하나라도 "East","West"에 지정이 되있어야 한다<br>       
+    
 	
 <details>
 <summary>신은철 이슈 코드 작성</summary>
