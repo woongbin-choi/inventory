@@ -68,7 +68,7 @@ public class BootSpringBootApplication {
 <details>
 <summary>최웅빈 이슈 코드 작성</summary>
 <div markdown="1">
-// JscrollPane scroll = new JScrollPane(Component);   
+ 
    if(pbDAO.basketList().size() == 0) {
 			JPanel noData = new JPanel();
 			noData.setBackground(new Color(255,254,230));
