@@ -66,12 +66,12 @@ public class BootSpringBootApplication {
 
 </div>
 </details>    
-   <div> ㅈㄹㅈㄹ </div>
+  
 
 <details>
 	<summary>ScrollPane Issue</summary>
 	<div markdown="1"> 
-	
+	 <div> ㅈㄹㅈㄹ </div>
 	
 	public Detail_P2_C(String img_path, String name, String price, String quantity, JFrame frame) {
 	      LineBorder lineColor = new LineBorder(new Color(87,149,255));
