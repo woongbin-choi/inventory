@@ -73,7 +73,7 @@ public class BootSpringBootApplication {
 	<div markdown="1"> 
 	 <div> 장바구니 품목들은 각각 JPanel로 이루어져 있다.<br>   
 그 패널 안에는 해당 품목의 이미지/이름/가격/수량이 들어가는데,<br>    
-<u>이 때 Panel의 Layout을 null로 지정해주어야 setBounds 함수로 원하는 위치에 삽입할 수 있다.</u><br>      
+이 때 Panel의 Layout을 null로 지정해주어야 setBounds 함수로 원하는 위치에 삽입할 수 있다.<br>      
 하지만 JScrollPane Component의 Layout을 Null로 지정하면 전체 장바구니의 스크롤기능이 들어가지를 않는다.<br>      
 이 부분을 해결하기 위해서는, 각각의 품목 Panel의 요소들을 setBounds로 원하는 위치에 넣은 후에<br>      
 그 JPanel을 다시 JPanel2에 넣어주고,JPanel2의 Layout을 Default값 BorderLayout으로 지정한다.<br>      
