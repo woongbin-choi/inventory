@@ -72,8 +72,8 @@ public class BootSpringBootApplication {
 	<summary>ScrollPane Issue</summary>
 	<div markdown="1"> 
 	
-		
-		public Detail_P2_C(String img_path, String name, String price, String quantity, JFrame frame) {
+	
+	public Detail_P2_C(String img_path, String name, String price, String quantity, JFrame frame) {
 	      LineBorder lineColor = new LineBorder(new Color(87,149,255));
 
 	      setBackground(new Color(255, 255, 255));
@@ -121,6 +121,7 @@ public class BootSpringBootApplication {
 			}
 		});
 	   }
+		***
 		
 		if(pbDAO.basketList().size() == 0) {
 			JPanel noData = new JPanel();
