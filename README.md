@@ -1,4 +1,4 @@
-_# 🎥 Movie Kiosk (Team Project)    
+__# 🎥 Movie Kiosk (Team Project)    
 ***
 ### Period : August 2021,  2weeks
 ### Personnel : 6 명.  
@@ -100,6 +100,7 @@ public class BootSpringBootApplication {
 			scroll.setBounds(0, 67, 600, 383);
 			scroll.setVisible(true);
 		}	
+								     </div>
 	</details>
 <details>
 <summary>신은철 이슈 코드 작성</summary>
@@ -168,4 +169,5 @@ public class BootSpringBootApplication {
 ## _회고록_
 ~~~~~~~~~~작성~~~~~~~~~~~
 
+_
 _
