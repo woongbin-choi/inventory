@@ -71,7 +71,7 @@ public class BootSpringBootApplication {
 <details>
 	<summary>ScrollPane Issue</summary>
 	<div markdown="1"> 
-		
+	
 		
 		
 		if(pbDAO.basketList().size() == 0) {
@@ -106,7 +106,7 @@ public class BootSpringBootApplication {
 			scroll.setVisible(true);
 		}
 								     
-</div>							     
+</div>		
 </details>
 
 	
