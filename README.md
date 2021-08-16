@@ -67,12 +67,10 @@ public class BootSpringBootApplication {
 </div>
 </details>    
    
-```java
+
 <details>
 	<summary>ScrollPane Issue</summary>
 	<div markdown="1"> 
-		
-		
 		if(pbDAO.basketList().size() == 0) {
 			JPanel noData = new JPanel();
 			noData.setBackground(new Color(255,254,230));
@@ -107,7 +105,7 @@ public class BootSpringBootApplication {
 								     
 </div>							     
 </details>
-```
+
 	
 <details>
 <summary>신은철 이슈 코드 작성</summary>
