@@ -60,13 +60,7 @@ public class BootSpringBootApplication {
 <details>
 <summary>윤수영 이슈 코드 작성</summary>
 <div markdown="1">
-```java
-public class BootSpringBootApplication {
-  public static void main(String[] args) {
-    System.out.println("핵심 기능 코드");
-  }
-}
-```
+
 </div>
 </details>    
   
