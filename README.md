@@ -1,4 +1,4 @@
-# 🎥 Movie Kiosk (Team Project)    
+_# 🎥 Movie Kiosk (Team Project)    
 ***
 ### Period : August 2021,  2weeks
 ### Personnel : 6 명.  
@@ -68,7 +68,6 @@ public class BootSpringBootApplication {
 <details>
 <summary>최웅빈 이슈 코드 작성</summary>
 <div markdown="1">
- 
    if(pbDAO.basketList().size() == 0) {
 			JPanel noData = new JPanel();
 			noData.setBackground(new Color(255,254,230));
@@ -172,3 +171,4 @@ public class BootSpringBootApplication {
 ## _회고록_
 ~~~~~~~~~~작성~~~~~~~~~~~
 
+_
