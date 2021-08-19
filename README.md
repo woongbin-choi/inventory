@@ -146,11 +146,27 @@ public class ProductList {
 	<summary>Cancel Seats & Rollback Button</summary>
 
 ```java
+	if(SeatChoice_1.th1e_btn_selected[index - 1])
+         {
+            SeatChoice_1.th1e_btn_selected[index - 1] = false;
+            btn.setBackground(new Color(0x404040));
+            SeatChoice_1.selected_cnt--;
+            SeatChoice_1.ticket_price -= SeatChoice_1.th1e_btn_price[index - 1];
+            SeatChoice_1.price_label.setText("일반: " + (PeopleCheck.adult_cnt + PeopleCheck.child_cnt + PeopleCheck.old_cnt) + "              " + "장애인: " + PeopleCheck.disable_cnt + "              " + "가격: " + SeatChoice_1.ticket_price);
+
+         }
+         else
+         {
+            if(SeatChoice_1.peoples > SeatChoice_1.selected_cnt)
+            {
+               SeatChoice_1.th1e_btn_selected[index - 1] = true;
+               btn.setBackground(new Color(0xFF3333));
+               SeatChoice_1.selected_cnt++;
+               SeatChoice_1.ticket_price += SeatChoice_1.th1e_btn_price[index - 1];
+               SeatChoice_1.price_label.setText("일반: " + (PeopleCheck.adult_cnt + PeopleCheck.child_cnt + PeopleCheck.old_cnt) + "              " + "장애인: " + PeopleCheck.disable_cnt + "              " + "가격: " + SeatChoice_1.ticket_price);
+            }
 	
-	```
-
-
-
+```
 
 </details> 
 
