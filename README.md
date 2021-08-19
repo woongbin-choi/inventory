@@ -299,6 +299,85 @@ public S2Panel3(String date) {
 ```
 
 </details>
+	
+<details>
+	<summary>Design Size Error</summary>
+
+> Problem
+> > 
+> > > Solution 
+> > > >
+   
+```java
+/**
+	products들의 이름과 가격를 gui에 보여주기위해 html를 활용해 text를 만들었다.
+	@param name : 제품들 이름
+	@param price : 제품들 가격
+	@return : ArrayList<String>
+ */
+public ArrayList<String> p_text(ArrayList<String> name, ArrayList<Integer> price) {
+	ArrayList<String> result = new ArrayList<>();
+	
+    for (int i = 0; i < name.size(); ++i) {
+		DecimalFormat formatter = new DecimalFormat("###,###");	
+		result.add("<HTML>" + name.get(i) + "<br>" + formatter.format(price.get(i)) + "원</HTML>");
+	}
+	return result;
+}
+	
+/**
+	ImageIcon ArrayList에 img_path의 사진을 넣어준다.
+	img사이즈도 줄어줌
+	@param image_paths : 여러 이미지 path들이 들어가 있음
+	@return ArrayList<ImageIcon>
+*/
+public ArrayList<ImageIcon> makeImageIconArray(ArrayList<String> image_paths) {
+	ArrayList<ImageIcon> icons = new ArrayList<>();
+    
+	for (String path : image_paths) {
+		ImageIcon originIcon = new ImageIcon(path);
+		Image resizeIcon = originIcon.getImage().getScaledInstance(150, 150, Image.SCALE_SMOOTH);
+		
+		icons.add(new ImageIcon(resizeIcon));
+	}
+	return icons;
+}
+
+/**
+	img와 위에서 만든 name, price있는 text를 가지고 여러개의 버튼 만들기
+	@param icons : 각각의 제품 img들이 들어있다.
+	@param texts : 각각의 제품 name, price들이 들어있다.
+	@return ArrayList<JButton>
+*/
+public ArrayList<JButton> btn_list(ArrayList<ImageIcon> icons, ArrayList<String> texts){
+	ArrayList<JButton> btns = new ArrayList<>();
+	
+	for (int i = 0; i < icons.size(); ++i) {
+		btns.add(new JButton(texts.get(i),icons.get(i)));
+		btns.get(i).setBackground(Color.white);
+	}
+	return btns;
+}
+
+/**
+ 	타입에 맞는 products들의 정보 가져와서 ArrayList에 담아주기
+ 	@param products ArrayList에 제품 정보 담기
+	@param typeName 선택된 상품 type
+	@return ArrayList<Products>
+*/
+public ArrayList<Products> typeOfproduct(ArrayList<Products> products, String typeName){
+	ArrayList<Products> array = new ArrayList<>();
+
+	for (int i = 0; i < products.size(); ++i) {
+		if (products.get(i).getType().equals(typeName)) {
+			array.add(products.get(i));
+		}
+	}
+	return array;
+}
+```
+
+</details>
 
 ***  
 
