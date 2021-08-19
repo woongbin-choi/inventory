@@ -176,10 +176,37 @@ public class ProductList {
 </details> 
 
 <details>
-	<summary>Cancel Seats & Rollback Button</summary>
+	<summary>Duplicate selection error</summary>
+	
+> Problem
+> > 인원수를 고르는 과정에서 인원수를 클릭한 뒤 마음이 바뀌어 다른 영화를 선택했을 때 인원수를 고르는 프레임에 기존에 클릭돼있던 버튼이 그대로 클릭되어있는 문제를 겪었었습니다
+> > > Solution 
+> > > > 매번 인원수를 고르는 프레임이 떴을때 마다 버튼들을 초기화해준다면 해결이 될 것이라고 생각했습니다<br>인원수를 고르다가 또는 좌석을 고르다가 다른 영화를 보고 싶어진 경우 이전으로 돌아가도 항상 0명에 버튼이 체크돼있도록 만들었습니다
 
 ```java
+for(int i = 1; i < btns1.size(); i++) {
+				adult_btn.get(i).setBackground(new Color(0x404040));
+				child_btn.get(i).setBackground(new Color(0x404040));
+				disable_btn.get(i).setBackground(new Color(0x404040));
+				old_btn.get(i).setBackground(new Color(0x404040));
+			}
+			adult_cnt = 0;
+			child_cnt = 0;
+			disable_cnt = 0;
+			old_cnt = 0;
+			pre_adult_btn_num = 0;
+			now_adult_btn_num = 0;
+			pre_child_btn_num = 0;
+			now_child_btn_num = 0;
+			pre_disable_btn_num = 0;
+			now_disable_btn_num = 0;
+			pre_old_btn_num = 0;
+			now_old_btn_num = 0;
 
+		adult_btn.get(0).setBackground(new Color(0xCC0066));
+		child_btn.get(0).setBackground(new Color(0xCC0066));
+		disable_btn.get(0).setBackground(new Color(0xCC0066));
+		old_btn.get(0).setBackground(new Color(0xCC0066));
 	
 ```
 
