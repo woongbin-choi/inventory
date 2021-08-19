@@ -15,10 +15,11 @@
 ### ER Diagram
 ![Alt text](/path/to/img.jpg) erd사진 이미지파일에 넣고 불러오기 (사이즈 조절은 html문법으로 가능하다)   
 <img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
+![erd](https://user-images.githubusercontent.com/84116965/129391140-79714a8c-9b84-44e0-84d0-d9c5f5ad916e.png)
 ***   
 ### Usecase Diagram  
    
-   
+   ![usecase](https://user-images.githubusercontent.com/84116965/129388756-5ee5683e-bd54-4be5-958f-33405dd59fb1.png)
 
    
 *** 
