@@ -144,6 +144,9 @@ public class ProductList {
 ## 📝  _Troubles_   
 <details>
 	<summary>Cancel Seats & Rollback Button</summary>
+	
+> 문제
+> > ㅁㅈㄹㅈㄹ
 
 ```java
 	if(SeatChoice_1.th1e_btn_selected[index - 1])
@@ -171,50 +174,30 @@ public class ProductList {
 </details> 
 
 <details>
-    <summary>자세히</summary>
+	<summary>Cancel Seats & Rollback Button</summary>
 
-<!-- summary 아래 한칸 공백 두고 내용 삽입 -->
+```java
+
+	
+```
+
+</details><details>
+	<summary>Cancel Seats & Rollback Button</summary>
+
+```java
+
+	
+```
+
+</details><details>
+	<summary>Cancel Seats & Rollback Button</summary>
+
+```java
+
+	
+```
 
 </details>
-
-
-<details>
-<summary>윤수영 이슈 코드 작성</summary>
-<div markdown="1">
-
-</div>
-</details>    
-  
-
-    
-	
-<details>
-<summary>신은철 이슈 코드 작성</summary>
-<div markdown="1">
-
-이슈 해결과정 작성 
-
-
-</div>
-</details>    
-<details>
-<summary>이한나 이슈 코드 작성</summary>
-<div markdown="1">
-
-이슈 해결과정 작성 
-
-
-</div>
-</details>   
-<details>
-<summary>나지수 이슈 코드 작성</summary>
-<div markdown="1">
-
-이슈 해결과정 작성 
-
-
-</div>
-</details>  
 
 ***  
 
