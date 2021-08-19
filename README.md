@@ -146,7 +146,7 @@ public class ProductList {
 	<summary>Cancel Seats & Rollback Button</summary>
 	
 > 문제
-> > ㅁㅈㄹㅈㄹ
+> > 좌석을 고르는 과정에서 좌석을 선택한 후 마음이 바뀌어서 골랐던 것을 취소하기 위해 <br>한 번 더 클릭하면 원래의 색으로 돌아와야 했으나 버튼의 색깔을 받아오는 메서드를 찾지 못해 막혔었습니다.
 
 ```java
 	if(SeatChoice_1.th1e_btn_selected[index - 1])
