@@ -229,7 +229,7 @@ public class BootSpringBootApplication {
 ```   
 *** 
 
-## 📌 _Important_
+## 📌 _Video Solution_
 - Java Swing 동영상 출력
 
   - javaFx 외부라이브러리를 통한 동영상 출력
