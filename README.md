@@ -218,15 +218,7 @@ public class BootSpringBootApplication {
   }
 }
 ```   
-> `동영상 삽입`
-> > 간단설명   
-```java
-public class BootSpringBootApplication {
-  public static void main(String[] args) {
-    System.out.println("자랑하고 싶은 코드");
-  }
-}
-```   
+ 
 *** 
 
 ## 📌 _Video Solution_
