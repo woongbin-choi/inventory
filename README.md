@@ -40,7 +40,7 @@
 
 - Swing의 Timer 클래스를 이용한 동적인 처리
 
-- 해당 시간이 지난 후 이벤트 발생
+  - 해당 시간이 지난 후 이벤트 발생
 ***
 ## 📌 _Core Trouble shooting_   
 ```java
