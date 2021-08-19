@@ -7,7 +7,7 @@
 * [Used Technology](#Used-technology)
 * [ER Diagram](#ER-Diagram)
 * [Usecase Diagram](#usecase-diagram)
-* [Core Functions](#📌Core-functions)
+* [Core Functions](#📌-Core-functions)
 ***
 ## 📌 _Used Technology_       
 ## **JAVA 11 / Swing / Oracle**
@@ -21,7 +21,7 @@
 
    
 *** 
-## 📌_Core Functions_
+## 📌 _Core Functions_
 > __CRUD__
 > > **CRUD기능 설명**
  
