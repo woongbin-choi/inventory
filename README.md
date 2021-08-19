@@ -213,7 +213,8 @@ for(int i = 1; i < btns1.size(); i++) {
 </details>
 	
 <details>
-	<summary>Check Type Verification</summary>
+	<summary>Check Type Verification</summary>   
+	
 > Problem
 > > 좌석 선택중 장애인석의 숫자는 한정적인데 장애인이 아닌 사람이 장애인석을 예약하는 경우 오류 메시지를 띄워야 된다고 생각했으나<br> 사람 인원 중에서 장애인의 숫자를 알 수가 없어서 문제였습니다
 > > > Solution 
