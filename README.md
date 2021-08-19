@@ -3,14 +3,15 @@
 ### Period : August 2021,  2weeks
 ### Personnel : 6 명.  
 ***
-## 📌_Index_
-* [Used Technology](#Used-technology)
-* [ER Diagram](#ER-Diagram)
-* [Usecase Diagram](#usecase-diagram)
-* [Core Functions](#📌-Core-functions)
-***
-## 📌 _Used Technology_       
-## **JAVA 11 / Swing / Oracle**
+## 📌 _Environment_       
+> UI
+> > Java Swing
+
+> Programming Language
+> > Java version 11.0.1
+
+> DataBase
+> > Oracle DB version 18c
 ***
 ### ER Diagram
 ![erd](https://user-images.githubusercontent.com/84116965/129391140-79714a8c-9b84-44e0-84d0-d9c5f5ad916e.png)
