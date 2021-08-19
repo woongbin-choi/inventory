@@ -179,7 +179,7 @@ public class ProductList {
 	<summary>Duplicate selection error</summary>
 	
 > Problem
-> > 인원수를 고르는 과정에서 인원수를 클릭한 뒤 마음이 바뀌어 다른 영화를 선택했을 때 인원수를 고르는 프레임에 기존에 클릭돼있던 버튼이 그대로 클릭되어있는 문제를 겪었었습니다
+> > 인원수를 고르는 과정에서 인원수를 클릭한 뒤 마음이 바뀌어 다른 영화를 선택했을 때 <br>인원수를 고르는 프레임에 기존에 클릭돼있던 버튼이 그대로 클릭되어있는 문제를 겪었었습니다
 > > > Solution 
 > > > > 매번 인원수를 고르는 프레임이 떴을때 마다 버튼들을 초기화해준다면 해결이 될 것이라고 생각했습니다<br>인원수를 고르다가 또는 좌석을 고르다가 다른 영화를 보고 싶어진 경우 이전으로 돌아가도 항상 0명에 버튼이 체크돼있도록 만들었습니다
 
@@ -210,15 +210,57 @@ for(int i = 1; i < btns1.size(); i++) {
 	
 ```
 
-</details><details>
-	<summary>Cancel Seats & Rollback Button</summary>
+</details>
+	
+<details>
+	<summary>Check Type Verification</summary>
+> Problem
+> > 좌석 선택중 장애인석의 숫자는 한정적인데 장애인이 아닌 사람이 장애인석을 예약하는 경우 오류 메시지를 띄워야 된다고 생각했으나<br> 사람 인원 중에서 장애인의 숫자를 알 수가 없어서 문제였습니다
+> > > Solution 
+> > > > 인원수를 전체인원이 아닌 장애인 인원을 변수에 따로 저장해두어 인원 수를 확인하면 될 것이라고 생각했습니다<br>장애인 인원수보다 많은 수를 예약하려고 하면 에러 메시지를 나오게 설정해두어서 장애인석은 장애인만 예약할 수 있게 했습니다
 
 ```java
-
+if(PeopleCheck.disable_cnt == 0)
+                  {
+                     ErrorFrame frame = new ErrorFrame();
+                     frame.getContentPane().setBackground(new Color(0x404040));
+                     frame.setDefaultOptions();
+                     JLabel label = new JLabel();
+                     label.setText("장애인만 예약 가능합니다.");
+                     label.setFont(new Font("돋움", Font.PLAIN|Font.BOLD, 30));
+                     label.setForeground(Color.white);
+                     label.setHorizontalAlignment(JLabel.CENTER);
+                     frame.add(label);
+                  }
+                  else
+                  {
+                     if(PeopleCheck.disable_cnt > SeatChoice_1.disable_btn_cnt)
+                     {
+                        SeatChoice_1.th1a_btn_selected[index - 1] = true;
+                        btn.setBackground(new Color(0xFF3333));
+                        SeatChoice_1.disable_btn_cnt++;
+                        SeatChoice_1.selected_cnt++;
+                        SeatChoice_1.ticket_price += SeatChoice_1.th1a_btn_price[index - 1];
+                        SeatChoice_1.price_label.setText("일반: " + (PeopleCheck.adult_cnt + PeopleCheck.child_cnt + PeopleCheck.old_cnt) + "              " + "장애인: " + PeopleCheck.disable_cnt + "              " + "가격: " + SeatChoice_1.ticket_price);
+                     }
+                     else
+                     {
+                        ErrorFrame frame = new ErrorFrame();
+                        frame.getContentPane().setBackground(new Color(0x404040));
+                        frame.setDefaultOptions();
+                        JLabel label = new JLabel();
+                        label.setText("장애인만 예약 가능합니다.");
+                        label.setFont(new Font("돋움", Font.PLAIN|Font.BOLD, 30));
+                        label.setForeground(Color.white);
+                        label.setHorizontalAlignment(JLabel.CENTER);
+                        frame.add(label);
+                     }
 	
 ```
 
-</details><details>
+</details>
+
+<details>
 	<summary>Cancel Seats & Rollback Button</summary>
 
 ```java
