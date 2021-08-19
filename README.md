@@ -24,17 +24,23 @@
 
    
 *** 
-## 📌 _Core Functions_
-> __CRUD__
-> > **CRUD기능 설명**
- 
-```java
-public class BootSpringBootApplication {
-  public static void main(String[] args) {
-    System.out.println("핵심 기능 코드");
-  }
-}
-```
+## 📌 _Important_
+
+- 디자인 패턴
+
+  - MVC 패턴을 기반으로한 패키지 구성
+
+![mvc](https://user-images.githubusercontent.com/84116965/129394319-e93b844f-7ddc-4608-b708-b31ccc3b31bb.png)
+
+- Java Swing에 영상 출력
+
+  - mp4파일을 gif로 변환 후 화면에 출력(https://ezgif.com/video-to-gif)
+
+
+
+- Swing의 Timer 클래스를 이용한 동적인 처리
+
+- 해당 시간이 지난 후 이벤트 발생
 ***
 ## 📌 _Core Trouble shooting_   
 ```java
@@ -225,18 +231,17 @@ public class BootSpringBootApplication {
 
 ## 📸 _ScreenShot_   
 <details>
-<summary>GUI 화면 다 넣기</summary>
+<summary>GUI 화면 영상이나 스크린샷</summary>
 <div markdown="1">
 
-핵심 이미지 불러오기  
+이미지/비디오   
 
 
 </div>
 </details>   
 
 
-## _회고록_
-~~~~~~~~~~작성~~~~~~~~~~~
+
 
 _
 _
