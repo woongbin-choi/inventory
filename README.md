@@ -227,14 +227,25 @@ public class BootSpringBootApplication {
   }
 }
 ```   
-***   
+*** 
 
-## 📸 _ScreenShot_   
+## 📌 _Important_
+- Java Swing 동영상 출력
+
+  - javaFx 외부라이브러리를 통한 동영상 출력
+  
+  ![오류](https://user-images.githubusercontent.com/84116965/129397173-add4f35f-7aec-4145-b7d3-75567cd09e58.png)
+ 
+  - java 11.0.1버전은 해당 외부라이브러리와 연동문제가 생김 -> GIF파일로 대체하여 재생	
+	
+*** 
+
+## 📸 _Demonstration Video_   
 <details>
-<summary>GUI 화면 영상이나 스크린샷</summary>
+<summary>GUI 화면 영상</summary>
 <div markdown="1">
 
-이미지/비디오   
+영상삽입  
 
 
 </div>
@@ -243,5 +254,4 @@ public class BootSpringBootApplication {
 
 
 
-_
-_
+
