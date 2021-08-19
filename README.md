@@ -262,10 +262,39 @@ if(PeopleCheck.disable_cnt == 0)
 </details>
 
 <details>
-	<summary>Cancel Seats & Rollback Button</summary>
+	<summary>Exception in thread "AWT-EventQueue-0" java.lang.NumberFormatException: null</summary>   
+> Problem
+> > 생성자에서 date(일별 날짜) 값을 받아온 후 달력에서 날짜의 숫자가 한 자리일 때 앞에 "0"이 붙여질 수 있도록 생성해놓은
+ getSales() 함수에서 date값을 사용해야 하는데, 생성자에 선언한 date 이전에 getSales() 함수를 불러왔기 때문에 null값이 나온다.
+
+> > > Solution 
+> > > > this.date = date; 밑에 getSales();를 입력해주어야 오류가 해결이 된다.
 
 ```java
-
+public S2Panel3(String date) {
+		this.date = date;
+		getSales();
+		setBackground(Color.CYAN);
+		setBounds(12, 229, 362, 134);
+		setLayout(null);
+		l1 = new JLabel("상 품");
+		l2 = new JLabel("수량 : " + count);
+		l3 = new JLabel("가격 : " + sales);
+		
+		l1.setFont(new Font("굴림", Font.PLAIN, 50));
+		l1.setHorizontalAlignment(SwingConstants.CENTER);
+		l1.setBounds(12, 10, 140, 114);
+		
+		l2.setFont(new Font("굴림", Font.PLAIN, 20));
+		l2.setBounds(164, 10, 200, 50);
+		
+		l3.setFont(new Font("굴림", Font.PLAIN, 20));
+		l3.setBounds(164, 70, 200, 50);
+		
+		add(l1);
+		add(l2);
+		add(l3);
+	}
 	
 ```
 
