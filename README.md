@@ -21,7 +21,7 @@
 
    
 *** 
-## _📌Core Functions_
+## 📌_Core Functions_
 > __CRUD__
 > > **CRUD기능 설명**
  
