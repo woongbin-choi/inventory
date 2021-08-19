@@ -13,10 +13,10 @@
 > DataBase
 > > Oracle DB version 18c
 ***
-### ER Diagram
+### 📌 _ER Diagram_
 ![erd](https://user-images.githubusercontent.com/84116965/129391140-79714a8c-9b84-44e0-84d0-d9c5f5ad916e.png)
 ***   
-### Usecase Diagram  
+### 📌 _Usecase Diagram_  
    
    ![usecase](https://user-images.githubusercontent.com/84116965/129388756-5ee5683e-bd54-4be5-958f-33405dd59fb1.png)
 
