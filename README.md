@@ -303,10 +303,10 @@ public S2Panel3(String date) {
 <details>
 	<summary>Design Size Error</summary>
 
-> Problem
-> > 
-> > > Solution 
-> > > >
+- 상품들을 타입별로 나눠서 버튼으로 만들어주는 메소드들이다.
+- 처음에는 버튼에 이미지와 글(가격, 이름)로 두개로만 메소드를 나눠서 했었다.
+- 두개로만 했을때는 이미지의 사이즈를 줄이는데 제각각으로 바껴서 디자인에 오류가 생겼다.
+- 또한 버튼에 글 작성하는 방법이 JLabel이 있었는데 JLabel로 여러개 나눠서 하는거보다 html로 하는 방법이 효율적이라 생각해서 html로 만들어주는 메소드를 만들었다.
    
 ```java
 /**
