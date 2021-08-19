@@ -4,8 +4,9 @@
 ### Personnel : 6 명.  
 ***
 ## 📌_Index_
-* [Used Technology](#usedtechnology)
+* [Used Technology](#used-technology)
 * [ER Diagram](#ER-Diagram)
+* [Usecase Diagram](#usecase-diagram)
 ***
 ## 📌 _Used Technology_       
 ## **JAVA 11 / Swing / Oracle**
@@ -14,7 +15,7 @@
 ![Alt text](/path/to/img.jpg) erd사진 이미지파일에 넣고 불러오기 (사이즈 조절은 html문법으로 가능하다)   
 <img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
 ***   
-### Diagram  
+### Usecase Diagram  
    
    
 
