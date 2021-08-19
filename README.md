@@ -7,6 +7,7 @@
 * [Used Technology](#used-technology)
 * [ER Diagram](#ER-Diagram)
 * [Usecase Diagram](#usecase-diagram)
+* [Core Functions](#Core-Functions)
 ***
 ## 📌 _Used Technology_       
 ## **JAVA 11 / Swing / Oracle**
