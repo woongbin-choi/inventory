@@ -1,6 +1,6 @@
 # _🎥 Movie Kiosk_ (Team Project)    
 ***
-### Period : August 2021, 2weeks
+### Period : August 2021,  2weeks
 ### Personnel : 6 명.  
 ***
 ## 📌 _Environment_       
@@ -105,6 +105,7 @@ JScrollPane의 Component로 들어가는 JPanel안에 요소(JButton,JLabel)중 
 
 ```java
 public class ProductList {
+
   public static void main(String[] args) {
   	
     if(pbDAO.basketList().size() == 0) {
