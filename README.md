@@ -396,7 +396,43 @@ public ArrayList<Products> typeOfproduct(ArrayList<Products> products, String ty
 시간대를 비교해서 해당 영화가 가지고 있는 다른 정보들을 가져오는 방식을 사용했다<br>
    
 ```java
-
+public class BlackWidow implements ActionListener {
+   
+   JButton btn;
+   
+   ArrayList<Movies> movies = new DBList().moviesList();
+   ArrayList<Timetables> timeTables = new DBList().timeTablesList();
+   
+   
+   public BlackWidow(JButton btn) {
+      this.btn = btn;
+   }
+   
+   public void showInfo() {
+      int pri=0;
+      for(int i=0; i<timeTables.size(); i++) {
+         if(timeTables.get(i).getM_code()==3 && timeTables.get(i).getT_start().equals(btn.getText())) {
+            pri = i;
+         }
+      }
+      
+      SelectMovieMain.movie_name = movies.get(2).getM_name();
+      SelectMovieMain.movie_start_time =  Integer.parseInt(timeTables.get(pri).getT_start().substring(0, 2));
+      SelectMovieMain.time_code = timeTables.get(2).getT_code();
+      
+      PeopleCheck.th_num_check = timeTables.get(pri).getT_name().charAt(0) - '0';
+      PeopleCheck.time = timeTables.get(pri).getT_code();
+      
+   }
+   
+   public void actionPerformed(ActionEvent e) {
+      showInfo();
+      PeopleCheck frame = new PeopleCheck();
+      frame.getContentPane().setBackground(new Color(0x404040));
+      frame.setDefaultOptions();
+      
+   }   
+}
 	
 ```
 
