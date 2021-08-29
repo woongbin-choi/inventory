@@ -1,4 +1,4 @@
-# _🎥 Movie Kiosk_ (Team Project)    변경해야함
+# _🎥 Movie Kiosk_ (Team Project)    변경해야함. 
 ***
 ### Period : August 2021,  2weeks
 ### Personnel : 6 명.  
